@@ -7,7 +7,7 @@ describe Pizza do
     pizza.should_not be_baked
   end
 
-  xit "should bake the pizza" do
+  it "should bake the pizza" do
     pizza = Pizza.new
     pizza.bake
     pizza.should be_baked
