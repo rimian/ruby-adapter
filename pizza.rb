@@ -4,10 +4,6 @@ class Pizza
     @baked = false
   end
 
-  def bake
-    @baked = true
-  end
-
   def baked?
     @baked
   end

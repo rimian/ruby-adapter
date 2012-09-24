@@ -7,12 +7,8 @@ describe Pizza do
     pizza.should_not be_baked
   end
 
-  it "should bake the pizza" do
-    pizza = Pizza.new
-    pizza.bake
-    pizza.should be_baked
+  xit "should be a peperoni pizza" do
   end
 
-  it "should be a peperoni pizza"
   it "should be a mexican pizza"
 end
