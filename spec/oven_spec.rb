@@ -4,13 +4,13 @@ require File.dirname(__FILE__) + './../oven'
 
 describe Oven do
   it "should take a pizza" do
-    pizza = Pizza.new
+    pizza = Pizza.new :peperoni
     oven = Oven.new pizza
     oven.should have_pizza
   end
 
   it "should bake pizza" do
-    pizza = Pizza.new
+    pizza = Pizza.new :peperoni
     oven = Oven.new pizza
     oven.bake
     pizza.should be_baked
