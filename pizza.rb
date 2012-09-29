@@ -1,5 +1,6 @@
 class Pizza
   attr_reader :baked, :pizza_name
+  attr_accessor :baked
 
   def initialize(pizza_name)
     @pizza_name = pizza_name
@@ -12,10 +13,6 @@ class Pizza
 
   def flavour
     adapter.flavour
-  end
-
-  def baked=(baked)
-    @baked = baked
   end
 
   def baked?
