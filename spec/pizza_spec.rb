@@ -7,15 +7,18 @@ describe Pizza do
     pizza.should_not be_baked
   end
 
-  it "should have a flavour" do
+  it "should have an adapter" do
     pizza = Pizza.new :peperoni
     pizza.adapter.should be_a Pizzas::Peperoni
   end
 
   it "should be a peperoni pizza" do
     pizza = Pizza.new :peperoni
-    pizza.flavour.should eq 'peperoni'
+    pizza.flavour.should eq 'Peperoni'
   end
 
-  it "should be a mexican pizza"
+  it "should be a mexican pizza" do
+    pizza = Pizza.new :mexican
+    pizza.flavour.should eq 'Mexican'
+  end
 end

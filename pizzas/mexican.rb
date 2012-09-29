@@ -1,7 +1,7 @@
 module Pizzas
-  class Peperoni
+  class Mexican
     def flavour
-      'Peperoni'
+      'Mexican'
     end
   end
 end
