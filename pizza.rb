@@ -1,5 +1,5 @@
 class Pizza
-  attr_reader :baked, :pizza_name
+  attr_reader :pizza_name
   attr_accessor :baked
 
   def initialize(pizza_name)
