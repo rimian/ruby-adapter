@@ -12,12 +12,12 @@ describe Pizza do
     pizza.adapter.should be_a Pizzas::Peperoni
   end
 
-  it "should be a peperoni pizza" do
+  it "should be a peperoni pizza flavour" do
     pizza = Pizza.new :peperoni
     pizza.flavour.should eq 'Peperoni'
   end
 
-  it "should be a mexican pizza" do
+  it "should be a mexican pizza flavour" do
     pizza = Pizza.new :mexican
     pizza.flavour.should eq 'Mexican'
   end
