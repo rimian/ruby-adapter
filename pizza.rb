@@ -15,6 +15,10 @@ class Pizza
     adapter.flavour
   end
 
+  def cost
+    adapter.cost
+  end
+
   def baked?
     @baked == true
   end

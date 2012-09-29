@@ -17,8 +17,18 @@ describe Pizza do
     pizza.flavour.should eq 'Peperoni'
   end
 
+  it "should be a peperoni pizza price" do
+    pizza = Pizza.new :peperoni
+    pizza.cost.should eq '$16.95'
+  end
+
   it "should be a mexican pizza flavour" do
     pizza = Pizza.new :mexican
     pizza.flavour.should eq 'Mexican'
+  end
+
+  it "should be a mexican pizza price" do
+    pizza = Pizza.new :mexican
+    pizza.cost.should eq '$15.95'
   end
 end
