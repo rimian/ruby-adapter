@@ -1,15 +1,17 @@
 class Pizza
-  attr_reader :baked, :flavour
-  attr_accessor :adapter
+  attr_reader :baked, :pizza_name
 
-  def initialize(flavour)
-    @flavour = flavour
-    @baked = false
+  def initialize(pizza_name)
+    @pizza_name = pizza_name
   end
 
   def adapter
-    require File.dirname(__FILE__) + '/pizzas/' + flavour.to_s
-    Pizzas.const_get("#{flavour.to_s.capitalize}").new
+    require File.dirname(__FILE__) + '/pizzas/' + pizza_name.to_s
+    Pizzas.const_get("#{pizza_name.to_s.capitalize}").new
+  end
+
+  def flavour
+    adapter.flavour
   end
 
   def baked=(baked)
