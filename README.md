@@ -4,6 +4,6 @@ Ruby Adapter Pattern
 
 ## Oven
 
-## Piza
+## Pizza
 
 ## Types of Pizza
